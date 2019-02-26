@@ -6,8 +6,12 @@ target 'TrainGetter' do
   use_frameworks!
 
   # Pods for TrainGetter
-
-  pod 'Kanna', '~> 2.1.0'
-  pod 'Alamofire', '~> 4.4'
-  
+ 	pod 'FirebaseCore', :git => 'https://github.com/firebase/firebase-ios-sdk.git'
+	pod 'FirebaseAuth', :git => 'https://github.com/firebase/firebase-ios-sdk.git'
+	pod 'FirebaseDatabase', :git => 'https://github.com/firebase/firebase-ios-sdk.git'
+	pod 'FirebaseStorage', :git => 'https://github.com/firebase/firebase-ios-sdk.git'
+  	pod 'Kanna', :git => 'https://github.com/tid-kijyun/Kanna.git', :branch => 'swift4.1'
+  	pod 'Alamofire', '~> 4.4'
+  pod 'ReachabilitySwift', :git => 'https://github.com/ashleymills/Reachability.swift.git', :branch => 'master'
+  pod 'SwiftCSVExport'
 end

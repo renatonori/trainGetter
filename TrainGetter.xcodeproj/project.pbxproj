@@ -14,7 +14,15 @@
 		A92630281F6DE32F00560501 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92630271F6DE32F00560501 /* Assets.xcassets */; };
 		A926302B1F6DE32F00560501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92630291F6DE32F00560501 /* Main.storyboard */; };
 		A92630381F733BDC00560501 /* CSwiftV.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92630371F733BDC00560501 /* CSwiftV.swift */; };
+		A92858161F7B49880010024D /* CSVExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92858151F7B49880010024D /* CSVExport.swift */; };
+		A92858241F8196550010024D /* OutputJsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92858231F8196550010024D /* OutputJsonHelper.swift */; };
 		A97020BC1F73C33F00A3DC3C /* CustomTextTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97020BB1F73C33F00A3DC3C /* CustomTextTableCellView.swift */; };
+		A9CF69881F785B53002EF7EC /* HTMLParserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CF69871F785B53002EF7EC /* HTMLParserHelper.swift */; };
+		A9F9417020A290BC00A57F02 /* NaiveBayesClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F9416F20A290BC00A57F02 /* NaiveBayesClassifier.swift */; };
+		A9F9417320A29D8B00A57F02 /* NaiveBayesClassifierModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F9417220A29D8B00A57F02 /* NaiveBayesClassifierModel.swift */; };
+		A9F9417520A29ED800A57F02 /* NaiveBayesClassifierRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F9417420A29ED800A57F02 /* NaiveBayesClassifierRequests.swift */; };
+		A9F9417720A2B1BC00A57F02 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9F9417620A2B1BC00A57F02 /* GoogleService-Info.plist */; };
+		A9F9417920A2BA0700A57F02 /* FirebaseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F9417820A2BA0700A57F02 /* FirebaseStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,10 +35,18 @@
 		A92630271F6DE32F00560501 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A926302A1F6DE32F00560501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A926302C1F6DE32F00560501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A92630331F6EAECE00560501 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../iBrowser/Podfile; sourceTree = "<group>"; };
+		A92630331F6EAECE00560501 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../iBrowser/Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A92630361F733BDC00560501 /* CSwiftV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSwiftV.h; sourceTree = "<group>"; };
 		A92630371F733BDC00560501 /* CSwiftV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSwiftV.swift; sourceTree = "<group>"; };
+		A92858151F7B49880010024D /* CSVExport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVExport.swift; sourceTree = "<group>"; };
+		A92858231F8196550010024D /* OutputJsonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputJsonHelper.swift; sourceTree = "<group>"; };
 		A97020BB1F73C33F00A3DC3C /* CustomTextTableCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextTableCellView.swift; sourceTree = "<group>"; };
+		A9CF69871F785B53002EF7EC /* HTMLParserHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLParserHelper.swift; sourceTree = "<group>"; };
+		A9F9416F20A290BC00A57F02 /* NaiveBayesClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaiveBayesClassifier.swift; sourceTree = "<group>"; };
+		A9F9417220A29D8B00A57F02 /* NaiveBayesClassifierModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaiveBayesClassifierModel.swift; sourceTree = "<group>"; };
+		A9F9417420A29ED800A57F02 /* NaiveBayesClassifierRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaiveBayesClassifierRequests.swift; sourceTree = "<group>"; };
+		A9F9417620A2B1BC00A57F02 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A9F9417820A2BA0700A57F02 /* FirebaseStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorage.swift; sourceTree = "<group>"; };
 		FD43665BAD72FAD8F1312D9E /* Pods_TrainGetter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainGetter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -76,6 +92,8 @@
 		A92630201F6DE32F00560501 /* TrainGetter */ = {
 			isa = PBXGroup;
 			children = (
+				A9F9417620A2B1BC00A57F02 /* GoogleService-Info.plist */,
+				A9F9417120A29C9900A57F02 /* Classifier */,
 				A92630351F733BCA00560501 /* CSVReader */,
 				A92630211F6DE32F00560501 /* AppDelegate.swift */,
 				A92630231F6DE32F00560501 /* ViewController.swift */,
@@ -84,6 +102,10 @@
 				A92630291F6DE32F00560501 /* Main.storyboard */,
 				A926302C1F6DE32F00560501 /* Info.plist */,
 				A97020BB1F73C33F00A3DC3C /* CustomTextTableCellView.swift */,
+				A9CF69871F785B53002EF7EC /* HTMLParserHelper.swift */,
+				A92858151F7B49880010024D /* CSVExport.swift */,
+				A92858231F8196550010024D /* OutputJsonHelper.swift */,
+				A9F9417820A2BA0700A57F02 /* FirebaseStorage.swift */,
 			);
 			path = TrainGetter;
 			sourceTree = "<group>";
@@ -106,6 +128,16 @@
 			name = CSVReader;
 			sourceTree = "<group>";
 		};
+		A9F9417120A29C9900A57F02 /* Classifier */ = {
+			isa = PBXGroup;
+			children = (
+				A9F9416F20A290BC00A57F02 /* NaiveBayesClassifier.swift */,
+				A9F9417220A29D8B00A57F02 /* NaiveBayesClassifierModel.swift */,
+				A9F9417420A29ED800A57F02 /* NaiveBayesClassifierRequests.swift */,
+			);
+			name = Classifier;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,7 +150,6 @@
 				A926301B1F6DE32F00560501 /* Frameworks */,
 				A926301C1F6DE32F00560501 /* Resources */,
 				C530C9A653E18D42B877D46B /* [CP] Embed Pods Frameworks */,
-				0ECD09AAB8BE1BFA92A57371 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -141,6 +172,7 @@
 				TargetAttributes = {
 					A926301D1F6DE32F00560501 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = Q4FN3C72T2;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -171,40 +203,29 @@
 			files = (
 				A92630281F6DE32F00560501 /* Assets.xcassets in Resources */,
 				A926302B1F6DE32F00560501 /* Main.storyboard in Resources */,
+				A9F9417720A2B1BC00A57F02 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0ECD09AAB8BE1BFA92A57371 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrainGetter/Pods-TrainGetter-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C3BF09039C34AD830165F52C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrainGetter-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C530C9A653E18D42B877D46B /* [CP] Embed Pods Frameworks */ = {
@@ -213,9 +234,22 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TrainGetter/Pods-TrainGetter-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Kanna/Kanna.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftCSVExport/SwiftCSVExport.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kanna.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftCSVExport.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -229,10 +263,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9F9417020A290BC00A57F02 /* NaiveBayesClassifier.swift in Sources */,
 				A92630241F6DE32F00560501 /* ViewController.swift in Sources */,
 				A97020BC1F73C33F00A3DC3C /* CustomTextTableCellView.swift in Sources */,
 				A92630221F6DE32F00560501 /* AppDelegate.swift in Sources */,
+				A92858161F7B49880010024D /* CSVExport.swift in Sources */,
+				A92858241F8196550010024D /* OutputJsonHelper.swift in Sources */,
+				A9F9417520A29ED800A57F02 /* NaiveBayesClassifierRequests.swift in Sources */,
+				A9F9417320A29D8B00A57F02 /* NaiveBayesClassifierModel.swift in Sources */,
+				A9CF69881F785B53002EF7EC /* HTMLParserHelper.swift in Sources */,
 				A92630381F733BDC00560501 /* CSwiftV.swift in Sources */,
+				A9F9417920A2BA0700A57F02 /* FirebaseStorage.swift in Sources */,
 				A92630261F6DE32F00560501 /* Document.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,11 +401,15 @@
 			baseConfigurationReference = 84F43EC53CB195991CB4536F /* Pods-TrainGetter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q4FN3C72T2;
 				INFOPLIST_FILE = TrainGetter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ioshida.TrainGetter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -374,11 +419,15 @@
 			baseConfigurationReference = 4A9F082FC8B6E5DD85669A66 /* Pods-TrainGetter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q4FN3C72T2;
 				INFOPLIST_FILE = TrainGetter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ioshida.TrainGetter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
