@@ -16,12 +16,12 @@
 		A92630381F733BDC00560501 /* CSwiftV.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92630371F733BDC00560501 /* CSwiftV.swift */; };
 		A92858161F7B49880010024D /* CSVExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92858151F7B49880010024D /* CSVExport.swift */; };
 		A92858241F8196550010024D /* OutputJsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92858231F8196550010024D /* OutputJsonHelper.swift */; };
+		A95DA5C82295E581005851AD /* GoogleService-Info.plist in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F9417620A2B1BC00A57F02 /* GoogleService-Info.plist */; };
 		A97020BC1F73C33F00A3DC3C /* CustomTextTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97020BB1F73C33F00A3DC3C /* CustomTextTableCellView.swift */; };
 		A9CF69881F785B53002EF7EC /* HTMLParserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CF69871F785B53002EF7EC /* HTMLParserHelper.swift */; };
 		A9F9417020A290BC00A57F02 /* NaiveBayesClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F9416F20A290BC00A57F02 /* NaiveBayesClassifier.swift */; };
 		A9F9417320A29D8B00A57F02 /* NaiveBayesClassifierModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F9417220A29D8B00A57F02 /* NaiveBayesClassifierModel.swift */; };
 		A9F9417520A29ED800A57F02 /* NaiveBayesClassifierRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F9417420A29ED800A57F02 /* NaiveBayesClassifierRequests.swift */; };
-		A9F9417720A2B1BC00A57F02 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9F9417620A2B1BC00A57F02 /* GoogleService-Info.plist */; };
 		A9F9417920A2BA0700A57F02 /* FirebaseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F9417820A2BA0700A57F02 /* FirebaseStorage.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +56,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05B2DF5E4F3B9730E4184801 /* Pods_TrainGetter.framework in Frameworks */,
+				A95DA5C82295E581005851AD /* GoogleService-Info.plist in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,7 +168,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Renato Ioshida";
 				TargetAttributes = {
 					A926301D1F6DE32F00560501 = {
@@ -204,7 +205,6 @@
 			files = (
 				A92630281F6DE32F00560501 /* Assets.xcassets in Resources */,
 				A926302B1F6DE32F00560501 /* Main.storyboard in Resources */,
-				A9F9417720A2B1BC00A57F02 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,8 +238,9 @@
 				"${PODS_ROOT}/Target Support Files/Pods-TrainGetter/Pods-TrainGetter-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Kanna/Kanna.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftCSVExport/SwiftCSVExport.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 			);
@@ -247,8 +248,9 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kanna.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftCSVExport.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 			);
@@ -297,6 +299,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -307,6 +310,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -314,6 +318,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -353,6 +358,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -363,6 +369,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -370,6 +377,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -411,7 +419,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ioshida.TrainGetter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -429,7 +437,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ioshida.TrainGetter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

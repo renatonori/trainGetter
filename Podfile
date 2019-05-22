@@ -10,8 +10,8 @@ target 'TrainGetter' do
 	pod 'FirebaseAuth', :git => 'https://github.com/firebase/firebase-ios-sdk.git'
 	pod 'FirebaseDatabase', :git => 'https://github.com/firebase/firebase-ios-sdk.git'
 	pod 'FirebaseStorage', :git => 'https://github.com/firebase/firebase-ios-sdk.git'
-  	pod 'Kanna', :git => 'https://github.com/tid-kijyun/Kanna.git', :branch => 'swift4.1'
-  	pod 'Alamofire', '~> 4.4'
-  pod 'ReachabilitySwift', :git => 'https://github.com/ashleymills/Reachability.swift.git', :branch => 'master'
-  pod 'SwiftCSVExport'
+  	pod 'Kanna'
+  	pod 'Alamofire'
+  	pod 'ReachabilitySwift'
+	pod 'SwiftCSVExport'
 end

@@ -1,41 +1,62 @@
 PODS:
-  - Alamofire (4.5.1)
-  - FirebaseAuth (5.0.0):
-    - FirebaseCore (~> 5.0)
+  - Alamofire (4.8.2)
+  - FirebaseAuth (6.1.0):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 6.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/Environment (~> 6.0)
     - GTMSessionFetcher/Core (~> 1.1)
-  - FirebaseCore (5.0.0):
-    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
-  - FirebaseDatabase (5.0.0):
-    - FirebaseCore (~> 5.0)
+  - FirebaseAuthInterop (1.0.0)
+  - FirebaseCore (6.0.1):
+    - GoogleUtilities/Environment (~> 6.0)
+    - GoogleUtilities/Logger (~> 6.0)
+  - FirebaseDatabase (6.0.0):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 6.0)
     - leveldb-library (~> 1.18)
-  - FirebaseStorage (3.0.0):
-    - FirebaseCore (~> 5.0)
+  - FirebaseStorage (3.2.1):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 6.0)
     - GTMSessionFetcher/Core (~> 1.1)
-  - GoogleToolboxForMac/Defines (2.1.4)
-  - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
-    - GoogleToolboxForMac/Defines (= 2.1.4)
-  - GTMSessionFetcher/Core (1.1.15)
-  - Kanna (4.0.0)
+  - GoogleUtilities/AppDelegateSwizzler (6.1.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.1.0)
+  - GoogleUtilities/Logger (6.1.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/Network (6.1.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.1.0)"
+  - GoogleUtilities/Reachability (6.1.0):
+    - GoogleUtilities/Logger
+  - GTMSessionFetcher/Core (1.2.2)
+  - Kanna (5.0.0)
   - leveldb-library (1.20)
-  - ReachabilitySwift (4.1.0)
-  - SwiftCSVExport (1.0.3)
+  - ReachabilitySwift (4.3.1)
+  - SwiftCSVExport (2.0.1)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.4)
+  - Alamofire
   - FirebaseAuth (from `https://github.com/firebase/firebase-ios-sdk.git`)
   - FirebaseCore (from `https://github.com/firebase/firebase-ios-sdk.git`)
   - FirebaseDatabase (from `https://github.com/firebase/firebase-ios-sdk.git`)
   - FirebaseStorage (from `https://github.com/firebase/firebase-ios-sdk.git`)
-  - Kanna (from `https://github.com/tid-kijyun/Kanna.git`, branch `swift4.1`)
-  - ReachabilitySwift (from `https://github.com/ashleymills/Reachability.swift.git`, branch `master`)
+  - Kanna
+  - ReachabilitySwift
   - SwiftCSVExport
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
-    - GoogleToolboxForMac
+    - FirebaseAuthInterop
+    - GoogleUtilities
     - GTMSessionFetcher
+    - Kanna
     - leveldb-library
+    - ReachabilitySwift
     - SwiftCSVExport
 
 EXTERNAL SOURCES:
@@ -47,46 +68,35 @@ EXTERNAL SOURCES:
     :git: https://github.com/firebase/firebase-ios-sdk.git
   FirebaseStorage:
     :git: https://github.com/firebase/firebase-ios-sdk.git
-  Kanna:
-    :branch: swift4.1
-    :git: https://github.com/tid-kijyun/Kanna.git
-  ReachabilitySwift:
-    :branch: master
-    :git: https://github.com/ashleymills/Reachability.swift.git
 
 CHECKOUT OPTIONS:
   FirebaseAuth:
-    :commit: dbcd179788a4cce4e9e3ae545e736148438c5c6f
+    :commit: 3c09c229b2378fd536e3822d9f219ec9c7ab0b07
     :git: https://github.com/firebase/firebase-ios-sdk.git
   FirebaseCore:
-    :commit: dbcd179788a4cce4e9e3ae545e736148438c5c6f
+    :commit: 3c09c229b2378fd536e3822d9f219ec9c7ab0b07
     :git: https://github.com/firebase/firebase-ios-sdk.git
   FirebaseDatabase:
-    :commit: dbcd179788a4cce4e9e3ae545e736148438c5c6f
+    :commit: 3c09c229b2378fd536e3822d9f219ec9c7ab0b07
     :git: https://github.com/firebase/firebase-ios-sdk.git
   FirebaseStorage:
-    :commit: dbcd179788a4cce4e9e3ae545e736148438c5c6f
+    :commit: 3c09c229b2378fd536e3822d9f219ec9c7ab0b07
     :git: https://github.com/firebase/firebase-ios-sdk.git
-  Kanna:
-    :commit: cc9c254a9e9906199f8c3760af5d58c8f50c0806
-    :git: https://github.com/tid-kijyun/Kanna.git
-  ReachabilitySwift:
-    :commit: 43b206183f2bf9523561263cb6d19aa0e2576ed0
-    :git: https://github.com/ashleymills/Reachability.swift.git
 
 SPEC CHECKSUMS:
-  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
-  FirebaseAuth: acbeef02fe7c3a26624e309849f3fe30c84115af
-  FirebaseCore: e46e4babb9de298fb2f736958edcc6da1dc60d73
-  FirebaseDatabase: 697eb53e5b4fe7cd4fa8756c1f82a9fca011345f
-  FirebaseStorage: 7ca4bb7b58a25fa647b04f524033fc7cb7eb272b
-  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
-  GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
-  Kanna: d5ae2a26472f7e7a474e7f36a9cd8aa2c8c63ad3
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  FirebaseAuth: 4281d6d98a90881e00710fa8d9e37c2ccdfc7d80
+  FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
+  FirebaseCore: 66bdef3b310a026880e2a5bc8aa586ab62ce4543
+  FirebaseDatabase: 00dc8dcbeadcdace56a5e82e19acf8724cb20e36
+  FirebaseStorage: 74865aedd0637d9abf87da29c616224c2125f0dc
+  GoogleUtilities: 84df567c76ca84f67b7bb40e769fdd4acc746a10
+  GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
+  Kanna: a32875df62975f8f4b871e933b4ea1a5c3b8be0f
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
-  ReachabilitySwift: adc49b96d6ffa7508266d69df653cea40a2ef912
-  SwiftCSVExport: a43e07cb88c365e45b9565f66f63d3e811fee22d
+  ReachabilitySwift: 4032e2f59586e11e3b0ebe15b167abdd587a388b
+  SwiftCSVExport: a2baa3904699e9d5b66dc1a15111d8172ade84dc
 
-PODFILE CHECKSUM: f5e5f58f70e35f893566555cb6a16cd4b0c9616c
+PODFILE CHECKSUM: 7adff5afddf5a5159df6ab922207b77580f7ec0b
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.0
