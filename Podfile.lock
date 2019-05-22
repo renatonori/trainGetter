@@ -31,7 +31,7 @@ DEPENDENCIES:
   - SwiftCSVExport
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - Alamofire
     - GoogleToolboxForMac
     - GTMSessionFetcher
@@ -89,4 +89,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: f5e5f58f70e35f893566555cb6a16cd4b0c9616c
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.6.1

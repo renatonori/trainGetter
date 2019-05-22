@@ -96,7 +96,6 @@
 				A9F9417120A29C9900A57F02 /* Classifier */,
 				A92630351F733BCA00560501 /* CSVReader */,
 				A92630211F6DE32F00560501 /* AppDelegate.swift */,
-				A92630231F6DE32F00560501 /* ViewController.swift */,
 				A92630251F6DE32F00560501 /* Document.swift */,
 				A92630271F6DE32F00560501 /* Assets.xcassets */,
 				A92630291F6DE32F00560501 /* Main.storyboard */,
@@ -123,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				A92630361F733BDC00560501 /* CSwiftV.h */,
+				A92630231F6DE32F00560501 /* ViewController.swift */,
 				A92630371F733BDC00560501 /* CSwiftV.swift */,
 			);
 			name = CSVReader;
@@ -183,6 +183,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -234,7 +235,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TrainGetter/Pods-TrainGetter-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-TrainGetter/Pods-TrainGetter-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
@@ -253,7 +254,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrainGetter/Pods-TrainGetter-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrainGetter/Pods-TrainGetter-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
